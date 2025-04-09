@@ -2,10 +2,7 @@
   "name": "cooourse-rabota",
   "version": "0.1.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Scottttish/Studish.git"
-  },
+    "homepage": "https://ТВОЙ_НИК.github.io/Studish",
   "dependencies": {
     "@react-three/cannon": "^6.6.0",
     "@react-three/drei": "^10.0.5",
