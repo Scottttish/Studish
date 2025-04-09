@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Studish/static/css/main.ea731bec.css",
+    "main.js": "/Studish/static/js/main.2901f734.js",
+    "static/js/453.82255d6b.chunk.js": "/Studish/static/js/453.82255d6b.chunk.js",
+    "index.html": "/Studish/index.html",
+    "main.ea731bec.css.map": "/Studish/static/css/main.ea731bec.css.map",
+    "main.2901f734.js.map": "/Studish/static/js/main.2901f734.js.map",
+    "453.82255d6b.chunk.js.map": "/Studish/static/js/453.82255d6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea731bec.css",
+    "static/js/main.2901f734.js"
+  ]
+}
