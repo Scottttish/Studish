@@ -1,0 +1,142 @@
+.navigation-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 0; 
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.navigation-block { 
+  width: 100%; 
+  max-width: 1200px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  width: 140px; /* Ограничиваем ширину логотипа */
+  height: 45px;
+}
+.nav-links {
+  cursor: pointer;
+  color: black;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-left: auto; 
+  margin-right: 70px; 
+}
+
+.nav-links a {
+  color: rgb(5, 0, 0);
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.register-btn {
+  background: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: lightgray;
+}
+
+.register-btn-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  color: white; 
+  background-color: #e0e0e0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn-icon:hover {
+  background-color: #cfcfcf;
+}
+
+.favorite-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+  background-color: white;
+  border: none;
+}
+
+
+
+.recipe-favorites-list {
+  position: fixed; 
+  top: 60px; 
+  left: 1020px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 195px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  overflow-y: auto; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  z-index: 10; 
+}
+
+.recipe-favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 195px;
+  height: 200px;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+  color: black;
+}
+
+.recipe-favorites-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-favorites:hover {
+  transform: scale(1.00);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3, p {
+  color: black;
+}

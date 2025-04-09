@@ -1,0 +1,154 @@
+.greeting-section {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.text-section {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 80px; 
+}
+
+.text-section h2 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.text-section p {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.view-recipe-button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ff6b00;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.view-recipe-button:hover {
+  background-color: #d15f0e;
+}
+
+.ingredient-section {
+  position: absolute;
+  transition: transform 1.1s ease;
+  z-index: 0;
+}
+
+.ingredient {
+  animation: moveDownUp 40s ease-in-out infinite;
+  width: 100%;
+  height: auto;
+  opacity: 0.95;
+}
+
+@keyframes moveDownUp {
+  0% {
+    transform: translateY(0); 
+  }
+  30% {
+    transform: translateY(26px); 
+  }
+  50% {
+    transform: translateY(0); 
+  }
+  70% {
+    transform: translateY(-26px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/*Левая сторона изображений*/
+.lettuce2 {
+  width: 150px;
+  transform: rotate(0deg);
+  top: 23%; 
+  left: 1.5%; 
+}
+.mushroom1 {
+  width: 120px; 
+  top: 13%; 
+  left: 15%; 
+  transform: rotate(-60deg);
+}
+.olive1 {
+  width: 160px;
+  top: 51%; 
+  left: 3%;
+  transform: rotate(100deg);
+}
+.pepper {
+  width: 160px;
+  top: 59%; 
+  left: 14%;
+  transform: rotate(-16deg);
+}
+.tomato1 {
+  width: 180px;
+  top: 74%;
+  left: 2%; 
+}
+
+
+/*Правая сторона изображений*/
+.olive2 {
+  width: 140px;
+  top: 11%; 
+  right: 14%;
+  transform: rotate(-15deg);
+}
+.tomato2 { 
+  width: 230px;
+  top: 19%; 
+  right: 0.1%;
+  transform: rotate(130deg);
+}
+.mushroom2 {
+  width: 140px;
+  top: 48%;
+  right: 5%; 
+}
+.garlic {
+  width: 130px;
+  top: 62%;
+  right: 15%;
+}
+.lettuce1 { 
+  width: 180px;
+  top: 75%; 
+  right: 2%; 
+}
+
+/*Суп круглый*/
+.rounded_boul {
+  position: absolute;
+  transform: translateX(-50%);
+  transition: transform 0.1s ease-out;
+}
+

@@ -1,0 +1,305 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем по левому краю */
+    text-align: left; /* Выравнивание текста по левому краю */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 210px;
+    height: 200px;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: black;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 190px;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipe-image {
+    width: 190px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+.reviews {
+    font-weight: bold;
+    position: absolute;
+    top: 123px;
+    left: 28%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    z-index: 2;
+}
+
+.favorite-button {
+    top: 20px; 
+    right: 29px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    z-index: 2;
+    border: none;
+    position: absolute; 
+    transition: all 1s ease;
+}
+
+.heart-filled {
+    fill: white;
+    stroke: currentColor;
+    transform: scale(1.2);
+}
+
+.recipe-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: black;
+}
+
+.recipe-title {
+    color: black; 
+}
+
+.recipe-category {
+    position: absolute;
+    right: 28px;
+    bottom: 57px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    background: #eae9e9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 850px;
+    min-height: 500px;
+    position: relative;
+    gap: 10px;
+    align-items: start;
+    overflow-y: auto; /* Добавляем прокрутку */
+    max-height: 60vh; 
+}
+
+.modal-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 20px;
+}
+
+.modal-image {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-image img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.modal-review-and-category {
+    background-color: #eff0ef;
+    width: 280px;
+    height: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-info {
+    background-color: #eff0ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Выравнивание контента слева */
+    text-align: left; /* Выравнивание текста слева */
+    padding: 20px;
+    border-radius: 20px;
+    width: 425px;
+    height: 360px;
+    margin-left: -110px; /* Сдвиг левее */
+}
+
+
+.modal-info h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+}
+
+.modal-info p {
+    font-size: 12px;
+    color: rgb(25, 25, 25);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.review-section {
+    grid-column: 1 / 3;
+    grid-row: 1.5;
+    width: 760px;
+    height: auto;
+    min-height: 70px; 
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.review-section textarea {
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 60px;
+    width: 100%;
+    border: none;
+    resize: vertical;
+    color: white;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+
+.modal-reviews {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.review-container {
+  background-color: orange;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-list {
+    display: flex;
+    gap: 10px;
+}
+
+.recipe-card {
+    width: 200px;
+    text-align: center;
+}
+
+.nav-button {
+    background: orange; 
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -30px;
+    margin-right: -30px; /* Корректируем смещение */
+    opacity: 1; 
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.dot {
+    height: 5px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 20px; 
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.container h3 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px; /* Увеличиваем отступ сверху */
+    font-size: 44px; /* Размер шрифта заголовка */
+    margin-bottom: -15px; /* Убираем отступ снизу */
+}
