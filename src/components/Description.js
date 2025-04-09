@@ -104,7 +104,7 @@ const Description = () => {
         <div className="sponsors-image">
           {[...Array(2)].map((_, i) => (
             <React.Fragment key={i}>
-              <img src="/images/Description/Danone.png" alt="Danone" />
+              <img src="images/Description/Danone.png" alt="Danone" />
               <img src="/images/Description/Bayan-sulu.png" alt="Bayan-sulu" />
               <img src="/images/Description/Barilla.png" alt="Barilla" />
               <img src="/images/Description/La-molisana.png" alt="La-molisana" />
